@@ -1,0 +1,13 @@
+/* Admin Dashboard Page Styles */
+.welcome-banner{background:linear-gradient(135deg,var(--primary),var(--primary-dk));color:#fff;border-radius:var(--radius);padding:1.5rem 2rem;margin-bottom:1.75rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;}
+.welcome-banner h2{font-size:1.4rem;font-weight:800;}
+.welcome-banner p{opacity:.85;font-size:.9rem;margin-top:.25rem;}
+.welcome-banner .time{font-size:1.1rem;font-weight:700;opacity:.9;}
+.pending-row{background:#fff8f8 !important;}
+.pending-row td{border-left:3px solid var(--danger);}
+.quick-action-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem;margin-bottom:1.75rem;}
+.quick-action{background:var(--white);border-radius:var(--radius);padding:1.25rem;box-shadow:var(--shadow);text-align:center;text-decoration:none;color:var(--dark);transition:transform var(--transition),box-shadow var(--transition);border:2px solid transparent;}
+.quick-action:hover{transform:translateY(-3px);box-shadow:0 6px 20px rgba(0,0,0,0.12);border-color:var(--primary);text-decoration:none;}
+.quick-action .qa-icon{font-size:2rem;margin-bottom:.5rem;}
+.quick-action .qa-label{font-size:.85rem;font-weight:600;}
+.revenue-highlight{color:var(--success);font-size:1.6rem;font-weight:800;}

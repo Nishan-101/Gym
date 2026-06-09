@@ -1,0 +1,378 @@
+
+
+/* 
+   CSS VARIABLES
+ */
+:root {
+    --primary: #e74c3c;
+    --primary-dark: #c0392b;
+    --primary-light: #fde8e8;
+    --dark: #1f1f1f;
+    --dark-light: #2a2a2a;
+    --text: #333;
+    --text-muted: #666;
+    --bg: #fff;
+}
+
+
+* { box-sizing: border-box; }
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #2a2a2a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+}
+main   { margin: 0; padding: 0; }
+footer { margin-top: 0; }
+img    { max-width: 100%; display: block; }
+a      { text-decoration: none; color: inherit; }
+
+/* 
+   BUTTONS
+   */
+.btn {
+    display: inline-block;
+    padding: 0.85rem 1.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 2px solid transparent;
+}
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+}
+.btn-outline {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.btn-outline:hover {
+    background: #fff;
+    color: var(--dark);
+}
+
+/* 
+   HERO SECTION  (index.jsp)
+    */
+.hero {
+    background: var(--dark);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 1rem;
+}
+.hero h1 span { color: var(--primary); }
+.hero p {
+    max-width: 640px;
+    margin: 0 auto 2rem;
+    color: #ccc;
+    font-size: 1.1rem;
+}
+.hero-btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.hero-stats {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hero-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hs-num {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+.hs-lbl {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 0.25rem;
+}
+
+/* 
+   PAGE HERO  (about, contact, etc.)
+  */
+.page-hero {
+    background: var(--dark);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+.page-hero h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin: 0;
+}
+.page-hero h1 span { color: var(--primary); }
+.page-hero p {
+    color: #aaa;
+    margin: 0.5rem auto 0;
+    max-width: 550px;
+}
+
+/* 
+   GENERIC SECTION
+ */
+.section {
+    padding: 4rem 2rem;
+    background: #fff;
+}
+.section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.section-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 0.5rem;
+}
+.section-sub {
+    text-align: center;
+    color: var(--text-muted);
+    margin: 0 0 3rem;
+}
+
+/* 
+   FEATURES GRID  (index.jsp)
+    */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+.feature-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.feature-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.15rem;
+}
+.feature-card p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* 
+   FEATURE ICONS
+   */
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 26px;
+    color: var(--primary-dark);
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.feature-card:hover .feature-icon {
+    background: var(--primary-dark);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+/* 
+   CTA SECTION  (light black)
+   */
+.cta-section {
+    background: var(--dark-light);
+    text-align: center;
+    padding: 4rem 2rem;
+    margin: 0;
+}
+.cta-section h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.cta-section p {
+    color: #bbb;
+    margin-bottom: 1.5rem;
+}
+.cta-section .btn-primary {
+    padding: 0.85rem 2rem;
+    font-size: 1rem;
+}
+
+/* 
+   ABOUT GRID  (about.jsp)
+*/
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-img-box {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.about-img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 0 1rem;
+}
+.about-text > p {
+    color: #555;
+    margin: 0 0 1rem;
+    line-height: 1.7;
+}
+
+/* Values in 2 x 2 grid */
+.about-values {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 2rem;
+}
+.value-item h4 {
+    margin: 0 0 0.25rem;
+    font-size: 1rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.value-item h4 i { color: var(--primary); }
+.value-item p {
+    margin: 0 0 0 1.75rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.trainer-card {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 12px;
+    padding: 1.75rem 1.25rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: box-shadow 0.2s;
+}
+.trainer-card:hover {
+    box-shadow: 0 6px 22px rgba(0,0,0,0.11);
+}
+
+.trainer-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.25rem;
+    flex-shrink: 0;
+}
+
+.trainer-card h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--dark);
+}
+.trainer-role {
+    color: var(--primary);
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin: 0;
+}
+.trainer-exp {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    justify-content: center;
+}
+.trainer-exp i {
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
+/* 
+   RESPONSIVE
+  */
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .about-values {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}

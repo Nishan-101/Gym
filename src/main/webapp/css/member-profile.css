@@ -1,0 +1,109 @@
+/* Member Profile Page Styles */
+
+.profile-container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1.5rem;
+}
+
+/* HEADER */
+.profile-header{
+    background:linear-gradient(135deg,var(--dark),var(--dark2));
+    border-radius:var(--radius);
+    padding:2rem;
+    display:flex;
+    align-items:center;
+    gap:1.5rem;
+    margin-bottom:1.75rem;
+    flex-wrap:wrap;
+}
+
+.profile-avatar-lg{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:var(--primary);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:2rem;
+    font-weight:800;
+    flex-shrink:0;
+}
+
+.profile-header img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #fff;
+}
+
+.profile-header .ph-name{
+    color:#fff;
+    font-size:1.3rem;
+    font-weight:800;
+}
+
+.profile-header .ph-email{
+    color:#aaa;
+    font-size:.88rem;
+    margin-top:.2rem;
+}
+
+.profile-header .ph-role{
+    margin-top:.5rem;
+}
+
+/* TABS */
+.profile-tabs{
+    display:flex;
+    gap:.5rem;
+    margin-bottom:1.5rem;
+    border-bottom:2px solid var(--border);
+    padding-bottom:.5rem;
+}
+
+.profile-tab{
+    padding:.5rem 1.2rem;
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+    font-size:.88rem;
+    color:var(--gray);
+    border-radius:var(--radius) var(--radius) 0 0;
+    transition:all var(--transition);
+}
+
+.profile-tab.active,
+.profile-tab:hover{
+    color:var(--primary);
+    background:rgba(230,57,70,.08);
+}
+
+/* SECTIONS */
+.profile-section{display:none;}
+.profile-section.active{display:block;}
+
+/* upload */
+.upload-box{
+    display:flex;
+    gap:1.5rem;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.upload-content{
+    flex:1;
+    min-width:250px;
+}
+
+.helper-text{
+    color:var(--gray);
+    font-size:.85rem;
+    margin-top:.4rem;
+}
+
+/* buttons reuse global */

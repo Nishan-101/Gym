@@ -1,0 +1,103 @@
+/* Member Classes Page Styles */
+
+.classes-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:1.5rem;
+    width:100%;
+}
+
+.class-tile{
+    background:var(--white);
+    border-radius:16px;
+    padding:1.5rem;
+    box-shadow:var(--shadow);
+    border-top:4px solid var(--primary);
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    transition:.3s ease;
+    min-height:280px;
+}
+
+.class-tile:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 18px rgba(0,0,0,0.12);
+}
+
+.class-tile h3{
+    font-size:1.2rem;
+    font-weight:700;
+    margin-bottom:1rem;
+    color:var(--dark);
+}
+
+.ct-trainer{
+    margin-bottom:.8rem;
+    color:var(--primary);
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:.5rem;
+}
+
+.ct-meta{
+    color:var(--gray);
+    line-height:1.8;
+    font-size:.92rem;
+}
+
+.ct-meta i{
+    width:18px;
+    color:var(--primary);
+}
+
+/* Spots */
+.spots-badge{
+    display:inline-block;
+    padding:.4rem .75rem;
+    border-radius:999px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.spots-full{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.spots-low{
+    background:#fef3c7;
+    color:#d97706;
+}
+
+.spots-ok{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+/* Actions */
+.ct-actions{
+    margin-top:1.2rem;
+    display:flex;
+    gap:.5rem;
+    flex-wrap:wrap;
+}
+
+/* Enrolled badge */
+.enrolled-indicator{
+    background:var(--info);
+    color:#fff;
+    font-size:.75rem;
+    font-weight:700;
+    padding:.2rem .6rem;
+    border-radius:999px;
+    margin-left:.5rem;
+}
+
+/* No data */
+.no-data{
+    text-align:center;
+    padding:3rem;
+    color:var(--gray);
+}

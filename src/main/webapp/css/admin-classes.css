@@ -1,0 +1,98 @@
+/* 
+   ADMIN CLASSES Page
+ */
+
+.class-schedule-table thead th:first-child{
+    width:180px;
+}
+
+.schedule-name{
+    font-weight:700;
+}
+
+.schedule-time{
+    font-size:.82rem;
+    color:var(--gray);
+}
+
+/* capacity */
+.capacity-bar{
+    height:6px;
+    background:var(--border);
+    border-radius:3px;
+    margin-top:.4rem;
+    overflow:hidden;
+}
+
+.capacity-fill{
+    height:100%;
+    background:var(--success);
+    border-radius:3px;
+    transition:width .3s;
+}
+
+.capacity-fill.warn{ background:var(--warning); }
+.capacity-fill.full{ background:var(--danger); }
+
+.capacity-text{
+    font-size:.78rem;
+    color:var(--gray);
+    margin-top:.2rem;
+}
+
+/* attendance */
+.attendance-section{
+    background:var(--white);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+    padding:1.5rem;
+    margin-top:1.5rem;
+}
+
+.attendance-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:1rem;
+}
+
+/* 
+   FIXED ACTION BUTTON GROUP
+*/
+
+.action-btns{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    justify-content:flex-start;
+    flex-wrap:nowrap;
+}
+
+/* uniform buttons */
+.action-btns .btn{
+    width:34px;
+    height:34px;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+    font-size:14px;
+}
+
+/* remove form spacing issue */
+.action-btns form{
+    margin:0;
+    display:flex;
+}
+
+/* hover effect */
+.action-btns .btn:hover{
+    transform:translateY(-2px);
+    transition:0.2s ease;
+}
+
+/* row hover */
+.table-wrap table tbody tr:hover{
+    background:#f9fafb;
+}

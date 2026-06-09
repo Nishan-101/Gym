@@ -1,0 +1,15 @@
+/* Auth Pages (Login, Register) Styles */
+.auth-wrapper{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#1a1a2e 0%,var(--dark) 50%,#16213e 100%);padding:2rem;position:relative;overflow:hidden;}
+.auth-wrapper::before{content:'';position:absolute;width:400px;height:400px;background:rgba(230,57,70,.06);border-radius:50%;top:-100px;right:-100px;}
+.auth-wrapper::after{content:'';position:absolute;width:300px;height:300px;background:rgba(230,57,70,.04);border-radius:50%;bottom:-80px;left:-80px;}
+.auth-box{background:#fff;border-radius:16px;padding:2.5rem 2rem;width:100%;max-width:480px;box-shadow:0 25px 80px rgba(0,0,0,.35);position:relative;z-index:1;}
+.auth-logo{text-align:center;font-size:2.2rem;font-weight:900;margin-bottom:.25rem;}
+.auth-logo span{color:var(--primary);}
+.auth-subtitle{text-align:center;color:var(--gray);font-size:.88rem;margin-bottom:2rem;}
+.auth-divider{text-align:center;color:var(--gray);font-size:.82rem;margin:1rem 0;position:relative;}
+.auth-divider::before,.auth-divider::after{content:'';position:absolute;top:50%;width:42%;height:1px;background:var(--border);}
+.auth-divider::before{left:0;}
+.auth-divider::after{right:0;}
+.auth-footer-link{text-align:center;font-size:.88rem;color:var(--gray);margin-top:1.25rem;}
+.register-box{max-width:580px;}
+.pwd-hint{font-size:.75rem;color:var(--gray);margin-top:.3rem;line-height:1.4;}
